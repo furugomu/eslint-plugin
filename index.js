@@ -22,7 +22,7 @@ module.exports = {
       overrides: [
         {
           files: ["*.ts"],
-          parser: "typescript-eslint-parser",
+          parser: "babel-eslint",
           parserOptions: {
             sourceType: "module"
           },
@@ -35,7 +35,7 @@ module.exports = {
       overrides: [
         {
           files: ["*.tsx"],
-          parser: "typescript-eslint-parser",
+          parser: "babel-eslint",
           parserOptions: {
             ecmaFeatures: { jsx: true },
             sourceType: "module"
@@ -56,7 +56,7 @@ module.exports = {
           parser: "vue-eslint-parser",
           parserOptions: {
             sourceType: "module",
-            parser: "typescript-eslint-parser"
+            parser: "babel-eslint"
           }
         }
       ]
